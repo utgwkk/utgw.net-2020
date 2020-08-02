@@ -5,6 +5,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
+        <title>utgw.net</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
