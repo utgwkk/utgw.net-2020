@@ -1,4 +1,6 @@
 import React from "react";
+import { LargeIcon } from "../components/large-icon";
+import { Contacts } from "../components/contacts";
 import Head from "next/head";
 
 const Home: React.FC = () => {
@@ -20,24 +22,8 @@ const Home: React.FC = () => {
         />
       </Head>
       <h1>utgw.net</h1>
-      <div id="icon" />
-      <div id="contacts">
-        <div className="contact twitter">
-          <a href="https://twitter.com/utgwkk">
-            <img src="img/twitter.png" alt="Twitter" />
-          </a>
-        </div>
-        <div className="contact github">
-          <a href="https://github.com/utgwkk">
-            <img src="img/github.png" alt="GitHub" />
-          </a>
-        </div>
-        <div className="contact hatenablog">
-          <a href="https://utgwkk.hateblo.jp/">
-            <img src="img/hatenablog.svg" alt="Hatena Blog" />
-          </a>
-        </div>
-      </div>
+      <LargeIcon />
+      <Contacts />
       <div id="aboutme">
         <h2>Profile</h2>
         <p>utgwkk (@utgwkk, a.k.a. @utgw, UTAGAWA Kiki) ...</p>
