@@ -1,3 +1,11 @@
+/* https://fonts.googleapis.com/css?family=Ubuntu:300 */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjsGyI.ttf) format('truetype');
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #ccc;

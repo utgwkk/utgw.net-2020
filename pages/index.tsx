@@ -15,11 +15,6 @@ const Home: React.FC = () => {
         />
         <meta name="format-detection" content="telephone=no" />
         <link href="/favicon.ico" rel="icon" type="image/png" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Ubuntu:300"
-          rel="stylesheet"
-          type="text/css"
-        />
       </Head>
       <h1>utgw.net</h1>
       <LargeIcon />
