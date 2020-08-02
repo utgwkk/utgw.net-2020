@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/globals.css";
+import "../styles/main.css";
 
 interface MyAppArgs {
   Component: any;
