@@ -52,7 +52,7 @@ const Home: React.FC = () => {
           </li>
           <li>is studying computer science.</li>
           <li>is a Pythonista.</li>
-          <li>can use Python, Ruby, Go.</li>
+          <li>can use Python, Perl, Ruby, Go.</li>
         </ul>
         <h2>My Accounts</h2>
         <ul>
