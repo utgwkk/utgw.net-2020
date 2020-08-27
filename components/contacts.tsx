@@ -13,7 +13,7 @@ export const Contacts: React.FC = () => (
       </a>
     </div>
     <div className="contact hatenablog">
-      <a href="https://utgwkk.hateblo.jp/">
+      <a href="https://blog.utgw.net/">
         <img src="img/hatenablog.svg" alt="Hatena Blog" />
       </a>
     </div>
