@@ -26,14 +26,19 @@ a:hover {
   color: #00f;
 }
 
-#icon {
+.icon-placeholder {
   margin: 0 auto;
+  width: 500px;
+  height: 500px;
   margin-bottom: 2em;
+}
+
+#icon {
+  text-align: center;
   width: 500px;
   height: 500px;
   border: solid #333 5px;
   border-radius: 250px;
-  background: url(../public/img/nikutai.png) no-repeat;
   background-color: #fff;
   background-size: contain;
 }
