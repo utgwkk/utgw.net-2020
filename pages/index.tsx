@@ -97,7 +97,7 @@ const Home: React.FC = () => {
         <em>replace (at) into @ before sending.</em>
         <ul>
           <li>
-            <address> utagawa.kiki (at) gmail.com</address>
+            <address> utagawakiki (at) gmail.com</address>
           </li>
           <li>
             <address> utgw (at) kmc.gr.jp</address>
