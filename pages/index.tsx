@@ -104,7 +104,7 @@ const Home: React.FC = () => {
           </li>
         </ul>
         <hr />
-        <div>&copy; 2016-2020 UTAGAWA Kiki</div>
+        <div>&copy; 2016-2021 UTAGAWA Kiki</div>
         <div>
           <a href="https://sites.google.com/site/happybusy/">
             <img src="/img/busy_banner.png" alt="happybusy" />
