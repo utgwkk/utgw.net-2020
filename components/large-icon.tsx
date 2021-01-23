@@ -1,3 +1,3 @@
 import React from "react";
 
-export const LargeIcon: React.FC = () => <div id="icon" />;
+export const LargeIcon: React.VFC = () => <div id="icon" />;

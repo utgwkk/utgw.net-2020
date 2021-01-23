@@ -3,7 +3,7 @@ import { LargeIcon } from "../components/large-icon";
 import { Contacts } from "../components/contacts";
 import Head from "next/head";
 
-const Home: React.FC = () => {
+const Home: React.VFC = () => {
   return (
     <>
       <Head>
