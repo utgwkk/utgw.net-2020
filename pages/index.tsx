@@ -86,7 +86,9 @@ const Home: React.VFC = () => {
           <li>Discord (utgwkk#3191)</li>
           <li>Swarm (utgwkk)</li>
           <li>Yo (UTAGAWAKIKI)</li>
-          <li>PyPI (utgwkk)</li>
+          <li>
+            <a href="https://pypi.org/user/utgwkk/">PyPI (utgwkk)</a>
+          </li>
           <li>And so on ...</li>
         </ul>
         <h2>Presentations</h2>
