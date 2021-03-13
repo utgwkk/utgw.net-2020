@@ -1,4 +1,4 @@
-import React, { VFC } from "react";
+import React from "react";
 
 interface Account {
   title: string;
@@ -43,12 +43,12 @@ const accountList: Account[] = [
   { id: "utgwkk", title: "PyPI", url: "https://pypi.org/user/utgwkk/" },
 ];
 
-const AccountListItem: VFC<Account> = ({ title, id, url }) => {
+const AccountListItem: React.VFC<Account> = ({ title, id, url }) => {
   const linkText = `${title} (${id})`;
   return <li>{url ? <a href={url}>{linkText}</a> : linkText}</li>;
 };
 
-export const AccountList: VFC = () => {
+export const AccountList: React.VFC = () => {
   return (
     <ul>
       {accountList.map((account, i) => (
