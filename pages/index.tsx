@@ -61,6 +61,7 @@ const Home: React.VFC = () => {
               src="/img/busy_banner.png"
               width={200}
               height={40}
+              unoptimized={true}
               alt="happybusy"
             />
           </a>
