@@ -2,6 +2,7 @@ import React from "react";
 import { LargeIcon } from "../components/large-icon";
 import { Contacts } from "../components/contacts";
 import Head from "next/head";
+import { AccountList } from "../components/account-list";
 
 const Home: React.VFC = () => {
   return (
@@ -36,61 +37,7 @@ const Home: React.VFC = () => {
           <li>can use Python, Perl, Ruby, Go.</li>
         </ul>
         <h2>My Accounts</h2>
-        <ul>
-          <li>
-            <a href="https://twitter.com/@utgwkk">Twitter (@utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://github.com/utgwkk">GitHub (@utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://profile.hatena.ne.jp/utgwkk/">Hatena (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://tumblr.utgw.net/">Tumblr (@utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://www.slideshare.net/utgw">SlideShare (utgw)</a>
-          </li>
-          <li>
-            <a href="https://speakerdeck.com/utgwkk">SpeakerDeck (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://www.python.org/users/utgwkk/">
-              Python Software Foundation (utgwkk)
-            </a>
-          </li>
-          <li>
-            <a href="https://atcoder.jp/user/utgwkk">AtCoder (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://www.nicovideo.jp/user/20617895">
-              niconico (20617895)
-            </a>
-          </li>
-          <li>
-            <a href="https://pixiv.me/utgwkk">pixiv (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://steamcommunity.com/id/utgwkk/">Steam (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://monappy.jp/u/utgwkk">Monappy (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://keybase.io/utgwkk">Keybase (utgwkk)</a>
-          </li>
-          <li>
-            <a href="https://metacpan.org/author/UTGWKK">PAUSE (UTGWKK)</a>
-          </li>
-          <li>Discord (utgwkk#3191)</li>
-          <li>Swarm (utgwkk)</li>
-          <li>Yo (UTAGAWAKIKI)</li>
-          <li>
-            <a href="https://pypi.org/user/utgwkk/">PyPI (utgwkk)</a>
-          </li>
-          <li>And so on ...</li>
-        </ul>
+          <AccountList />
         <h2>Presentations</h2>
         <a href="https://sugarheart.utgw.net/static/pdf/">
           List of presentations
