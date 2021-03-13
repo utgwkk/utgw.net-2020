@@ -1,9 +1,9 @@
 {
   "plugins": ["prettier"],
   "extends": [
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:react/recommended"
+    "prettier"
   ],
   "rules": {
     "no-console": 0,
