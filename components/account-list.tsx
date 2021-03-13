@@ -7,40 +7,40 @@ interface Account {
 }
 
 const accountList: Account[] = [
-  { id: "@utgwkk", title: "Twitter", url: "https://twitter.com/@utgwkk" },
-  { id: "@utgwkk", title: "GitHub", url: "https://github.com/utgwkk" },
+  { title: "Twitter", id: "@utgwkk", url: "https://twitter.com/@utgwkk" },
+  { title: "GitHub", id: "@utgwkk", url: "https://github.com/utgwkk" },
   {
-    id: "utgwkk",
     title: "Hatena",
+    id: "utgwkk",
     url: "https://profile.hatena.ne.jp/utgwkk/",
   },
-  { id: "@utgwkk", title: "Tumblr", url: "https://tumblr.utgw.net/" },
-  { id: "utgw", title: "SlideShare", url: "https://www.slideshare.net/utgw" },
-  { id: "utgwkk", title: "SpeakerDeck", url: "https://speakerdeck.com/utgwkk" },
+  { title: "Tumblr", id: "@utgwkk", url: "https://tumblr.utgw.net/" },
+  { title: "SlideShare", id: "utgw", url: "https://www.slideshare.net/utgw" },
+  { title: "SpeakerDeck", id: "utgwkk", url: "https://speakerdeck.com/utgwkk" },
   {
-    id: "utgwkk",
     title: "Python",
+    id: "utgwkk",
     url: "https://www.python.org/users/utgwkk/",
   },
-  { id: "utgwkk", title: "AtCoder", url: "https://atcoder.jp/user/utgwkk" },
+  { title: "AtCoder", id: "utgwkk", url: "https://atcoder.jp/user/utgwkk" },
   {
-    id: "20617895",
     title: "niconico",
+    id: "20617895",
     url: "https://www.nicovideo.jp/user/20617895",
   },
-  { id: "utgwkk", title: "pixiv", url: "https://pixiv.me/utgwkk" },
+  { title: "pixiv", id: "utgwkk", url: "https://pixiv.me/utgwkk" },
   {
-    id: "utgwkk",
     title: "Steam",
+    id: "utgwkk",
     url: "https://steamcommunity.com/id/utgwkk/",
   },
-  { id: "utgwkk", title: "Monappy", url: "https://monappy.jp/u/utgwkk" },
-  { id: "utgwkk", title: "Keybase", url: "https://keybase.io/utgwkk" },
-  { id: "UTGWKK", title: "PAUSE", url: "https://metacpan.org/author/UTGWKK" },
-  { id: "utgwkk#3191", title: "Discord" },
-  { id: "utgwkk", title: "Swarm" },
-  { id: "UTAGAWAKIKI", title: "Yo" },
-  { id: "utgwkk", title: "PyPI", url: "https://pypi.org/user/utgwkk/" },
+  { title: "Monappy", id: "utgwkk", url: "https://monappy.jp/u/utgwkk" },
+  { title: "Keybase", id: "utgwkk", url: "https://keybase.io/utgwkk" },
+  { title: "PAUSE", id: "UTGWKK", url: "https://metacpan.org/author/UTGWKK" },
+  { title: "Discord", id: "utgwkk#3191" },
+  { title: "Swarm", id: "utgwkk" },
+  { title: "Yo", id: "UTAGAWAKIKI" },
+  { title: "PyPI", id: "utgwkk", url: "https://pypi.org/user/utgwkk/" },
 ];
 
 const AccountListItem: React.VFC<Account> = ({ title, id, url }) => {
