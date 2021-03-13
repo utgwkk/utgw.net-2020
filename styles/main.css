@@ -27,16 +27,17 @@ a:hover {
   color: #00f;
 }
 
-#icon {
+.icon-container {
+  display: block;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 2em;
-  width: 500px;
-  height: 500px;
-  border: solid #333 5px;
+}
+
+.icon {
+  border: solid #333 5px !important;
   border-radius: 250px;
-  background: url(../public/img/nikutai.png) no-repeat;
   background-color: #fff;
-  background-size: contain;
 }
 
 #contacts {
