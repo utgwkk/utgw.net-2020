@@ -37,7 +37,7 @@ const Home: React.VFC = () => {
           <li>can use Python, Perl, Ruby, Go.</li>
         </ul>
         <h2>My Accounts</h2>
-          <AccountList />
+        <AccountList />
         <h2>Presentations</h2>
         <a href="https://sugarheart.utgw.net/static/pdf/">
           List of presentations
