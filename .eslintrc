@@ -15,6 +15,7 @@
       {
         "extensions": [".ts", ".tsx", ".js", ".jsx"]
       }
-    ]
+    ],
+    "react/prop-types": 0
   }
 }
