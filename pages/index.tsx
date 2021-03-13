@@ -2,6 +2,7 @@ import React from "react";
 import { LargeIcon } from "../components/large-icon";
 import { Contacts } from "../components/contacts";
 import Head from "next/head";
+import Image from "next/image";
 import { AccountList } from "../components/account-list";
 
 const Home: React.VFC = () => {
@@ -56,7 +57,13 @@ const Home: React.VFC = () => {
         <div>&copy; 2016-2021 UTAGAWA Kiki</div>
         <div>
           <a href="https://sites.google.com/site/happybusy/">
-            <img src="/img/busy_banner.png" alt="happybusy" />
+            <Image
+              src="/img/busy_banner.png"
+              width={200}
+              height={40}
+              unoptimized={true}
+              alt="happybusy"
+            />
           </a>
         </div>
       </div>
