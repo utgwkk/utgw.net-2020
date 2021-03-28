@@ -24,14 +24,9 @@ const Home: React.VFC = () => {
         <p>utgwkk (@utgwkk, a.k.a. @utgw, UTAGAWA Kiki) ...</p>
         <ul>
           <li>
-            is a 1st grade student of Graduate School of Informatics, Kyoto
-            University.
-          </li>
-          <li>
             is a member of <a href="https://kmc.jp/">KMC(京大マイコンクラブ)</a>
             .
           </li>
-          <li>is studying computer science.</li>
           <li>is a Pythonista.</li>
           <li>can use Python, Perl, Ruby, Go.</li>
         </ul>
