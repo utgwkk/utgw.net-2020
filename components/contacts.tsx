@@ -13,7 +13,7 @@ export const Contacts: React.VFC = () => (
       </a>
     </div>
     <div className="contact hatenablog">
-      <a href="https://blog.utgw.net/">
+      <a href="https://blog.utgw.net/?utm_source=utgw-net">
         <img src="img/hatenablog.svg" alt="Hatena Blog" />
       </a>
     </div>
