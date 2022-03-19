@@ -41,6 +41,8 @@ const accountList: Account[] = [
   { title: "Swarm", id: "utgwkk" },
   { title: "Yo", id: "UTAGAWAKIKI" },
   { title: "PyPI", id: "utgwkk", url: "https://pypi.org/user/utgwkk/" },
+  { title: "Blue Archive (JP)", id: "22922959" },
+  { title: "Genshin Impact", id: "819415045" },
 ];
 
 const AccountListItem: React.VFC<Account> = ({ title, id, url }) => {
