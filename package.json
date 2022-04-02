@@ -19,7 +19,7 @@
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.10.1",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^12.1.1",
+    "eslint-config-next": "^12.1.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
