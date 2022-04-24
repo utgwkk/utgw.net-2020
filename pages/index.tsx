@@ -1,10 +1,16 @@
 import React from "react";
+import type { GetStaticProps } from "next";
 import { LargeIcon } from "../components/large-icon";
 import { Contacts } from "../components/contacts";
 import Head from "next/head";
 import { AccountList } from "../components/account-list";
+import { getPresentations, Presentation } from "../lib/speakerdeck";
 
-const Home: React.VFC = () => {
+interface HomeProps {
+  presentations: Presentation[];
+}
+
+const Home: React.VFC<HomeProps> = ({ presentations }) => {
   return (
     <>
       <Head>
@@ -34,8 +40,24 @@ const Home: React.VFC = () => {
         <h2>My Accounts</h2>
         <AccountList />
         <h2>Presentations</h2>
-        <a href="https://sugarheart.utgw.net/static/pdf/">
-          List of presentations
+        <ul className="presentation">
+          {presentations.slice(0, 5).map((presentation) => (
+            <li key={presentation.id} className="presentation-item">
+              <div className="presentation-title">
+                <a href={presentation.url}>{presentation.title}</a>
+              </div>
+              <iframe
+                className="speakerdeck-iframe presentation-slide"
+                src={presentation.iframeUrl}
+                frameBorder={0}
+                allowTransparency
+                allowFullScreen
+              ></iframe>
+            </li>
+          ))}
+        </ul>
+        <a href="https://speakerdeck.com/utgwkk">
+          List of presentations (Speakerdeck)
         </a>
         <h2>Contacts</h2>
         <em>replace (at) into @ before sending.</em>
@@ -63,6 +85,12 @@ const Home: React.VFC = () => {
       </div>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const presentations = await getPresentations(5);
+
+  return { props: { presentations } };
 };
 
 export default Home;
