@@ -36,7 +36,6 @@ export const getPresentations = async (first = 5): Promise<Presentation[]> => {
       return html.querySelector("iframe")!.getAttribute("src");
     })
   );
-  console.log(iframeUrls);
 
   return presentations.map((p, i) => ({ ...p, iframeUrl: iframeUrls[i] }));
 };
