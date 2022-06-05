@@ -49,6 +49,7 @@ const Home: React.VFC<HomeProps> = ({ presentations }) => {
               <iframe
                 className="speakerdeck-iframe presentation-slide"
                 src={presentation.iframeUrl}
+                loading="lazy"
                 frameBorder={0}
                 allowTransparency
                 allowFullScreen
