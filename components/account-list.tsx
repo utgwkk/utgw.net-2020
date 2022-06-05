@@ -45,12 +45,12 @@ const accountList: Account[] = [
   { title: "Genshin Impact", id: "819415045" },
 ];
 
-const AccountListItem: React.VFC<Account> = ({ title, id, url }) => {
+const AccountListItem: React.FC<Account> = ({ title, id, url }) => {
   const linkText = `${title} (${id})`;
   return <li>{url ? <a href={url}>{linkText}</a> : linkText}</li>;
 };
 
-export const AccountList: React.VFC = () => {
+export const AccountList: React.FC = () => {
   return (
     <ul>
       {accountList.map((account, i) => (

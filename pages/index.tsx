@@ -10,7 +10,7 @@ interface HomeProps {
   presentations: Presentation[];
 }
 
-const Home: React.VFC<HomeProps> = ({ presentations }) => {
+const Home: React.FC<HomeProps> = ({ presentations }) => {
   return (
     <>
       <Head>

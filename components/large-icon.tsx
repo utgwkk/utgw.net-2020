@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LargeIcon: React.VFC = () => (
+export const LargeIcon: React.FC = () => (
   <div className="icon-container">
     <img
       src="/img/nikutai.png"

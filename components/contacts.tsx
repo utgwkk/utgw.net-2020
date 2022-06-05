@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Contacts: React.VFC = () => (
+export const Contacts: React.FC = () => (
   <div id="contacts">
     <div className="contact twitter">
       <a href="https://twitter.com/utgwkk">
