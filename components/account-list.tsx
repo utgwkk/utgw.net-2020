@@ -43,6 +43,7 @@ const accountList: Account[] = [
   { title: "PyPI", id: "utgwkk", url: "https://pypi.org/user/utgwkk/" },
   { title: "Blue Archive (JP)", id: "AYVBUOUW" },
   { title: "Genshin Impact", id: "819415045" },
+  { title: "Splatoon 3", id: "utgwkk#3341" },
 ];
 
 const AccountListItem: React.FC<Account> = ({ title, id, url }) => {
