@@ -21,6 +21,7 @@ const Home: React.FC<HomeProps> = ({ presentations }) => {
           content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
         />
         <meta property="og:title" content="&#xE000;utgw.net&#xE001;" />
+        <meta property="og:description" content="&#xE000;utgw.net&#xE001;" />
         <meta name="format-detection" content="telephone=no" />
         <link href="/favicon.ico" rel="icon" type="image/png" />
       </Head>
