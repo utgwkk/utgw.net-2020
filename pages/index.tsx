@@ -1,9 +1,9 @@
-import React from "react";
 import type { GetStaticProps } from "next";
-import { LargeIcon } from "../components/large-icon";
-import { Contacts } from "../components/contacts";
 import Head from "next/head";
+import React from "react";
 import { AccountList } from "../components/account-list";
+import { Contacts } from "../components/contacts";
+import { LargeIcon } from "../components/large-icon";
 import { getPresentations, Presentation } from "../lib/speakerdeck";
 
 interface HomeProps {
@@ -20,6 +20,7 @@ const Home: React.FC<HomeProps> = ({ presentations }) => {
           name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
         />
+        <meta property="og:title" content="&#xE000;utgw.net&#xE001;" />
         <meta name="format-detection" content="telephone=no" />
         <link href="/favicon.ico" rel="icon" type="image/png" />
       </Head>
