@@ -4,6 +4,7 @@ interface Account {
   title: string;
   id: string;
   url?: string;
+  rel?: string;
 }
 
 const accountList: Account[] = [
@@ -40,14 +41,30 @@ const accountList: Account[] = [
   { title: "Discord", id: "utgwkk#3191" },
   { title: "Swarm", id: "utgwkk" },
   { title: "Yo", id: "UTAGAWAKIKI" },
+  {
+    title: "Mastodon",
+    id: "@utgwkk@mastodon.social",
+    url: "https://mastodon.social/@utgwkk",
+    rel: "me",
+  },
   { title: "PyPI", id: "utgwkk", url: "https://pypi.org/user/utgwkk/" },
   { title: "Blue Archive (JP)", id: "AYVBUOUW" },
   { title: "Genshin Impact", id: "819415045" },
 ];
 
-const AccountListItem: React.FC<Account> = ({ title, id, url }) => {
+const AccountListItem: React.FC<Account> = ({ title, id, url, rel }) => {
   const linkText = `${title} (${id})`;
-  return <li>{url ? <a href={url}>{linkText}</a> : linkText}</li>;
+  return (
+    <li>
+      {url ? (
+        <a rel={rel} href={url}>
+          {linkText}
+        </a>
+      ) : (
+        linkText
+      )}
+    </li>
+  );
 };
 
 export const AccountList: React.FC = () => {
