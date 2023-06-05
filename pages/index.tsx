@@ -36,8 +36,7 @@ const Home: React.FC<HomeProps> = ({ presentations }) => {
             is a member of <a href="https://kmc.jp/">KMC(京大マイコンクラブ)</a>
             .
           </li>
-          <li>is a Pythonista.</li>
-          <li>can use Python, Perl, Ruby, Go.</li>
+          <li>can use Go, Perl, Python, TypeScript, Ruby and so on.</li>
         </ul>
         <h2>My Accounts</h2>
         <AccountList />
