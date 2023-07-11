@@ -3,7 +3,9 @@
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
-  src: local("Ubuntu Light"), local("Ubuntu-Light"),
+  src:
+    local("Ubuntu Light"),
+    local("Ubuntu-Light"),
     url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjsGyI.ttf)
       format("truetype");
   font-display: swap;

@@ -1,5 +1,5 @@
-import Parser from "rss-parser";
 import { parse as parseHTML } from "node-html-parser";
+import Parser from "rss-parser";
 
 export type Presentation = {
   id: string;
