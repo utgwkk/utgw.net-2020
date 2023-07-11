@@ -1,30 +1,34 @@
-import type { GetStaticProps } from "next";
-import Head from "next/head";
-import React from "react";
+import { Metadata } from "next";
 import { AccountList } from "../components/account-list";
 import { Contacts } from "../components/contacts";
 import { LargeIcon } from "../components/large-icon";
-import { getPresentations, Presentation } from "../lib/speakerdeck";
+import { Presentation, getPresentations } from "../lib/speakerdeck";
+
+export const metadata: Metadata = {
+  title: "utgw.net",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
+  openGraph: {
+    title: "&#xE000;utgw.net&#xE001;",
+    description: "&#xE000;utgw.net&#xE001;",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {},
+};
 
 interface HomeProps {
   presentations: Presentation[];
 }
 
-const Home: React.FC<HomeProps> = ({ presentations }) => {
+const Home = ({ presentations }: HomeProps) => {
   return (
     <>
-      <Head>
-        <title>utgw.net</title>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-        />
-        <meta property="og:title" content="&#xE000;utgw.net&#xE001;" />
-        <meta property="og:description" content="&#xE000;utgw.net&#xE001;" />
-        <meta name="format-detection" content="telephone=no" />
-        <link href="/favicon.ico" rel="icon" type="image/png" />
-      </Head>
       <h1>utgw.net</h1>
       <LargeIcon />
       <Contacts />
@@ -89,10 +93,10 @@ const Home: React.FC<HomeProps> = ({ presentations }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+const Page = async () => {
   const presentations = await getPresentations(5);
 
-  return { props: { presentations } };
+  return <Home presentations={presentations} />;
 };
 
-export default Home;
+export default Page;
