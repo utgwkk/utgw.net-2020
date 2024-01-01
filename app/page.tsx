@@ -76,7 +76,7 @@ const Home = ({ presentations }: HomeProps) => {
           </li>
         </ul>
         <hr />
-        <div>&copy; 2016-2023 UTAGAWA Kiki</div>
+        <div>&copy; 2016-2024 UTAGAWA Kiki</div>
         <div>
           <a href="https://sites.google.com/site/happybusy/">
             <img
