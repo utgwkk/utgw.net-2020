@@ -47,6 +47,11 @@ const accountList: Account[] = [
     url: "https://mastodon.social/@utgwkk",
     rel: "me",
   },
+  {
+    title: "Bluesky",
+    id: "@utgwkk.bsky.social",
+    url: "https://bsky.app/profile/utgwkk.bsky.social",
+  },
   { title: "PyPI", id: "utgwkk", url: "https://pypi.org/user/utgwkk/" },
   { title: "Blue Archive (JP)", id: "AYVBUOUW" },
   { title: "Genshin Impact", id: "819415045" },
