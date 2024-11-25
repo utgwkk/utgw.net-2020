@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && cp ./script/run.sh ./dist/standalone/",
-    "deploy": "next build && lambroll deploy --src=./dist/standalone",
+    "deploy": "yarn build && lambroll deploy --src=./dist/standalone",
     "deploy:statics": "./script/deploy-statics.sh",
     "start": "next start"
   },
