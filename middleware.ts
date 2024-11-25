@@ -6,10 +6,9 @@ export function middleware(request: NextRequest) {
       request.nextUrl.pathname,
       "https://sugarheart.utgw.net"
     );
-    return NextResponse.rewrite(redirectUrl, {
+    return NextResponse.redirect(redirectUrl, {
       status: 308,
       headers: {
-        Location: redirectUrl.toString(),
         "Cache-Control": "public, max-age=3600, s-maxage=3600",
       },
     });
