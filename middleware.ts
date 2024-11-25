@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(redirectUrl, {
       status: 308,
       headers: {
-        "Cache-Control": "public, max-age=3600, s-maxage=3600",
+        "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
       },
     });
   }
