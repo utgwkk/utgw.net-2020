@@ -18,6 +18,7 @@ module.exports = (phase) => {
     };
   }
   return {
-    output: "export",
+    output: "standalone",
+    distDir: "dist",
   };
 };
