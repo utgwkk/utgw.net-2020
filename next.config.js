@@ -5,19 +5,10 @@ const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
  */
 module.exports = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
-    return {
-      async redirects() {
-        return [
-          {
-            source: "/labs/:path*",
-            destination: "https://sugarheart.utgw.net/labs/:path*",
-            permanent: true,
-          },
-        ];
-      },
-    };
+    return {};
   }
   return {
-    output: "export",
+    output: "standalone",
+    distDir: "dist",
   };
 };
