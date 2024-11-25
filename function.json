@@ -24,7 +24,7 @@
   },
   "MemorySize": 256,
   "Role": "arn:aws:iam::747582436141:role/service-role/utgw-net-role-lzq9ocl9",
-  "Runtime": "nodejs18.x",
+  "Runtime": "nodejs22.x",
   "SnapStart": {
     "ApplyOn": "None"
   },
