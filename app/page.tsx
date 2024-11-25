@@ -93,8 +93,8 @@ const Home = ({ presentations }: HomeProps) => {
   );
 };
 
-// Cache for 5 minutes
-export const revalidate = 300;
+// Cache for 20 minutes
+export const revalidate = 1200;
 
 const Page = async () => {
   const presentations = await getPresentations(5);
