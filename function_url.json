@@ -1,0 +1,13 @@
+{
+  "Config": {
+    "AuthType": "AWS_IAM",
+    "InvokeMode": "BUFFERED"
+  },
+  "Permissions": [
+    {
+      "Principal": "cloudfront.amazonaws.com",
+      "SourceArn": "arn:aws:cloudfront::747582436141:distribution/EVPLDMU0R52KT",
+      "StatementId": "AllowCloudFrontServicePrincipal"
+    }
+  ]
+}
