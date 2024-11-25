@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && cp ./script/run.sh ./dist/standalone/",
-    "deploy": "next build && next export",
+    "deploy": "next build && lambroll deploy --src=./dist/standalone",
     "start": "next start"
   },
   "dependencies": {

@@ -1,0 +1,35 @@
+{
+  "Architectures": [
+    "arm64"
+  ],
+  "Environment": {
+    "Variables": {
+      "AWS_LAMBDA_EXEC_WRAPPER": "/opt/bootstrap",
+      "AWS_LWA_ENABLE_COMPRESSION": "true",
+      "PORT": "3000",
+      "RUST_LOG": "info"
+    }
+  },
+  "EphemeralStorage": {
+    "Size": 512
+  },
+  "FunctionName": "utgw-net",
+  "Handler": "run.sh",
+  "Layers": [
+    "arn:aws:lambda:ap-northeast-1:753240598075:layer:LambdaAdapterLayerArm64:23"
+  ],
+  "LoggingConfig": {
+    "LogFormat": "Text",
+    "LogGroup": "/aws/lambda/utgw-net"
+  },
+  "MemorySize": 256,
+  "Role": "arn:aws:iam::747582436141:role/service-role/utgw-net-role-lzq9ocl9",
+  "Runtime": "nodejs18.x",
+  "SnapStart": {
+    "ApplyOn": "None"
+  },
+  "Timeout": 10,
+  "TracingConfig": {
+    "Mode": "PassThrough"
+  }
+}
