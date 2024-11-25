@@ -93,6 +93,8 @@ const Home = ({ presentations }: HomeProps) => {
   );
 };
 
+export const revalidate = 60;
+
 const Page = async () => {
   const presentations = await getPresentations(5);
 
