@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     userScalable: false,
   },
   openGraph: {
-    title: "&#xE000;utgw.net&#xE001;",
-    description: "&#xE000;utgw.net&#xE001;",
+    title: "utgw.net",
+    description: "utgw.net",
   },
   formatDetection: {
     telephone: false,
