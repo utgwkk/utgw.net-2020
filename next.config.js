@@ -10,5 +10,7 @@ module.exports = (phase) => {
   return {
     output: "standalone",
     distDir: "dist",
+    cacheHandler: require.resolve("@henrikvolmer/nextjs-cache-handler-s3"),
+    cacheMaxMemorySize: 0,
   };
 };

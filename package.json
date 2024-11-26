@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@henrikvolmer/nextjs-cache-handler-s3": "^1.0.2",
     "next": "^15.0.3",
     "next-logger": "^5.0.1",
     "node-html-parser": "^6.1.5",
