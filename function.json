@@ -6,6 +6,8 @@
     "Variables": {
       "AWS_LAMBDA_EXEC_WRAPPER": "/opt/bootstrap",
       "AWS_LWA_ENABLE_COMPRESSION": "true",
+      "CACHE_BUCKET_NAME": "utgw-net-nextjs-cache",
+      "CACHE_PREFIX": "cache/",
       "PORT": "3000",
       "RUST_LOG": "info"
     }
