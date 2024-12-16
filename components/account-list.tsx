@@ -48,6 +48,11 @@ const accountList: Account[] = [
     rel: "me",
   },
   {
+    title: "mixi2",
+    id: "utgwkk",
+    url: "https://mixi.social/@utgwkk",
+  },
+  {
     title: "Bluesky",
     id: "@utgwkk.bsky.social",
     url: "https://bsky.app/profile/utgwkk.bsky.social",
