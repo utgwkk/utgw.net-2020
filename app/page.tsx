@@ -78,7 +78,7 @@ const Home = ({ presentations }: HomeProps) => {
         <hr />
         <div>&copy; 2016-2025 UTAGAWA Kiki</div>
         <div>
-          <a href="https://sites.google.com/site/happybusy/">
+          <a href="https://sites.google.com/view/happy-busy/">
             <img
               src="/img/busy_banner.png"
               width={200}
