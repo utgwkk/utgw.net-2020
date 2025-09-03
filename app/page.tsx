@@ -93,6 +93,8 @@ const Home = ({ presentations }: HomeProps) => {
   );
 };
 
+export const dynamic = 'force-dynamic';
+
 // Cache for 20 minutes
 export const revalidate = 1200;
 
