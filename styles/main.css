@@ -71,6 +71,11 @@ a:hover {
   margin: 20px auto;
 }
 
+#now {
+  margin-top: 10px;
+  text-align: right;
+}
+
 .presentation {
   margin-block-start: 0;
   margin-block-end: 0;

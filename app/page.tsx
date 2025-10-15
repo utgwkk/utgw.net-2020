@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { AccountList } from "../components/account-list";
 import { Contacts } from "../components/contacts";
 import { LargeIcon } from "../components/large-icon";
+import { Now } from "../components/now";
 import { Presentation, getPresentations } from "../lib/speakerdeck";
 
 export const metadata: Metadata = {
@@ -88,6 +89,9 @@ const Home = ({ presentations }: HomeProps) => {
             />
           </a>
         </div>
+      </div>
+      <div id="now">
+        <Now />
       </div>
     </>
   );
