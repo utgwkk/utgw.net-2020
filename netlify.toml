@@ -1,8 +1,0 @@
-[build]
-  command = "yarn deploy"
-  publish = "out/"
-
-[[redirects]]
-  from = "/labs/*"
-  to = "https://sugarheart.utgw.net/labs/:splat"
-  status = 301
