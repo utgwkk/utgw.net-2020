@@ -97,8 +97,7 @@ const Home = ({ presentations }: HomeProps) => {
   );
 };
 
-// Cache for 20 minutes
-export const revalidate = 1200;
+export const dynamic = "force-dynamic";
 
 const Page = async () => {
   const presentations = await getPresentations(5);
