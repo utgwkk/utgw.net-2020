@@ -1,7 +1,0 @@
-{
-  "extends": "next",
-  "plugins": ["prettier", "@typescript-eslint"],
-  "rules": {
-    "@next/next/no-img-element": "off"
-  }
-}
