@@ -6,6 +6,7 @@
     "dev": "tsx watch src/index.tsx",
     "build": "node build.mjs && cp script/run.sh dist",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint",
     "format": "prettier --log-level=warn --write .",
     "deploy": "run-s build deploy:statics deploy:lambda",
     "deploy:lambda": "lambroll deploy --src=./dist",
