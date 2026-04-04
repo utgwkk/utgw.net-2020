@@ -13,9 +13,7 @@
   },
   "FunctionName": "utgw-net",
   "Handler": "run.sh",
-  "Layers": [
-    "arn:aws:lambda:ap-northeast-1:753240598075:layer:LambdaAdapterLayerArm64:23"
-  ],
+  "Layers": ["arn:aws:lambda:ap-northeast-1:753240598075:layer:LambdaAdapterLayerArm64:23"],
   "LoggingConfig": {
     "LogFormat": "Text",
     "LogGroup": "/aws/lambda/utgw-net"

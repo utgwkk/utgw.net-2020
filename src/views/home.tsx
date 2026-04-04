@@ -19,8 +19,7 @@ export const Home = ({ presentations }: HomeProps) => {
         <p>utgwkk (@utgwkk, a.k.a. @utgw, UTAGAWA Kiki) ...</p>
         <ul>
           <li>
-            is a member of <a href="https://kmc.jp/">KMC(京大マイコンクラブ)</a>
-            .
+            is a member of <a href="https://kmc.jp/">KMC(京大マイコンクラブ)</a>.
           </li>
           <li>can use Go, Perl, Python, TypeScript, Ruby and so on.</li>
         </ul>
@@ -44,9 +43,7 @@ export const Home = ({ presentations }: HomeProps) => {
             </li>
           ))}
         </ul>
-        <a href="https://speakerdeck.com/utgwkk">
-          List of presentations (Speakerdeck)
-        </a>
+        <a href="https://speakerdeck.com/utgwkk">List of presentations (Speakerdeck)</a>
         <h2>Contacts</h2>
         <em>replace (at) into @ before sending.</em>
         <ul>
