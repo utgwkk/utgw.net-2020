@@ -1,6 +1,4 @@
-import React from "react";
-
-export const Contacts: React.FC = () => (
+export const Contacts = () => (
   <div id="contacts">
     <div className="contact twitter">
       <a href="https://twitter.com/utgwkk">

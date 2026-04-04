@@ -1,33 +1,14 @@
-import { Metadata } from "next";
 import { AccountList } from "../components/account-list";
 import { Contacts } from "../components/contacts";
 import { LargeIcon } from "../components/large-icon";
 import { Now } from "../components/now";
-import { Presentation, getPresentations } from "../lib/speakerdeck";
-
-export const metadata: Metadata = {
-  title: "utgw.net",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-  openGraph: {
-    title: "utgw.net",
-    description: "utgw.net",
-  },
-  formatDetection: {
-    telephone: false,
-  },
-  icons: {},
-};
+import { Presentation } from "../lib/speakerdeck";
 
 interface HomeProps {
   presentations: Presentation[];
 }
 
-const Home = ({ presentations }: HomeProps) => {
+export const Home = ({ presentations }: HomeProps) => {
   return (
     <>
       <h1>utgw.net</h1>
@@ -96,14 +77,3 @@ const Home = ({ presentations }: HomeProps) => {
     </>
   );
 };
-
-// Cache for 20 minutes
-export const revalidate = 1200;
-
-const Page = async () => {
-  const presentations = await getPresentations(5);
-
-  return <Home presentations={presentations} />;
-};
-
-export default Page;
