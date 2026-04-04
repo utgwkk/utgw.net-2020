@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.tsx",
-    "build": "node build.mjs",
+    "build": "node build.mjs && cp script/run.sh dist",
     "typecheck": "tsc --noEmit",
     "format": "prettier --log-level=warn --write .",
     "deploy": "run-s build deploy:statics deploy:lambda",
