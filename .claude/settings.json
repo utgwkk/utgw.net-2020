@@ -2,6 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(git checkout:*)",
+      "Bash(yarn format:*)",
+      "Bash(yarn lint:*)",
       "Bash(yarn build:*)",
       "Bash(yarn typecheck:*)",
       "Bash(yarn playwright:*)"
