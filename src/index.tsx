@@ -23,14 +23,11 @@ app.use("/*", serveStatic({ root: "./public" }));
 // Home page
 app.get("/", async (c) => {
   const presentations = await getPresentations(5);
-  c.header(
-    "Cache-Control",
-    "public, s-maxage=1200, stale-while-revalidate=60"
-  );
+  c.header("Cache-Control", "public, s-maxage=1200, stale-while-revalidate=60");
   return c.html(
     <Layout>
       <Home presentations={presentations} />
-    </Layout>
+    </Layout>,
   );
 });
 

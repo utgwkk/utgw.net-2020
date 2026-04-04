@@ -27,14 +27,14 @@ export const getPresentations = async (first = 5): Promise<Presentation[]> => {
   const iframeUrls = await Promise.all(
     presentations.map(async (presen) => {
       const reqUrl = `https://speakerdeck.com/oembed.json?url=${encodeURIComponent(
-        presen.url
+        presen.url,
       )}`;
       const resp = await fetch(reqUrl);
       const json = (await resp.json()) as { html: string };
       const html = parseHTML(json.html);
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       return html.querySelector("iframe")!.getAttribute("src");
-    })
+    }),
   );
 
   return presentations.map((p, i) => ({ ...p, iframeUrl: iframeUrls[i] }));

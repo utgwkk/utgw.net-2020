@@ -1,12 +1,10 @@
 {
-  "Architectures": [
-    "arm64"
-  ],
+  "Architectures": ["arm64"],
   "Environment": {
     "Variables": {
       "AWS_LAMBDA_EXEC_WRAPPER": "/opt/bootstrap",
       "AWS_LWA_ENABLE_COMPRESSION": "true",
-"PORT": "3000",
+      "PORT": "3000",
       "RUST_LOG": "info"
     }
   },
