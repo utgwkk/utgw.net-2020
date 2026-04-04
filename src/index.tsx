@@ -9,7 +9,11 @@ import pino from "pino";
 
 process.env.NO_COLOR = "1";
 
-const pinoLogger = pino();
+const pinoLogger = pino({
+  formatters: {
+    level: (label) => ({ level: label }),
+  },
+});
 const app = new Hono();
 
 app.use(logger((str) => pinoLogger.info(str)));
