@@ -12,7 +12,6 @@ export const Layout = ({ children }: { children: any }) => (
       <meta name="twitter:title" content="utgw.net" />
       <meta name="twitter:description" content="utgw.net" />
       <meta name="format-detection" content="telephone=no" />
-      <link rel="stylesheet" href="/styles/globals.css" />
       <link rel="stylesheet" href="/styles/main.css" />
     </head>
     <body>{children}</body>
