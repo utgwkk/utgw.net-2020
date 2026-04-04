@@ -1,19 +1,13 @@
 {
   "Architectures": ["arm64"],
   "Environment": {
-    "Variables": {
-      "AWS_LAMBDA_EXEC_WRAPPER": "/opt/bootstrap",
-      "AWS_LWA_ENABLE_COMPRESSION": "true",
-      "PORT": "3000",
-      "RUST_LOG": "info"
-    }
+    "Variables": {}
   },
   "EphemeralStorage": {
     "Size": 512
   },
   "FunctionName": "utgw-net",
-  "Handler": "run.sh",
-  "Layers": ["arn:aws:lambda:ap-northeast-1:753240598075:layer:LambdaAdapterLayerArm64:23"],
+  "Handler": "index.handler",
   "LoggingConfig": {
     "LogFormat": "Text",
     "LogGroup": "/aws/lambda/utgw-net"

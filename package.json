@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.tsx",
-    "build": "node build.mjs && cp script/run.sh dist",
+    "build": "node build.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint",
     "format": "oxfmt",
     "deploy": "run-s build deploy:statics deploy:lambda",
     "deploy:lambda": "lambroll deploy --src=./dist",
-    "deploy:statics": "./script/deploy-statics.sh",
-    "start": "node dist/index.mjs"
+    "deploy:statics": "./script/deploy-statics.sh"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.4",
