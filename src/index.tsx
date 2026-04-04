@@ -1,11 +1,22 @@
 import { Hono } from "hono";
+import { logger } from "hono/logger";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { serve } from "@hono/node-server";
 import { Layout } from "./views/layout";
 import { Home } from "./views/home";
 import { getPresentations } from "./lib/speakerdeck";
+import pino from "pino";
 
+process.env.NO_COLOR = "1";
+
+const pinoLogger = pino({
+  formatters: {
+    level: (label) => ({ level: label }),
+  },
+});
 const app = new Hono();
+
+app.use(logger((str) => pinoLogger.info(str)));
 
 // /labs/* → 308 redirect (replaces middleware.ts)
 app.use("/labs/*", async (c) => {
