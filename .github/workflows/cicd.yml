@@ -17,9 +17,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-      - run: yarn install
-      - run: yarn lint
-      - run: yarn build
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
   e2e:
     timeout-minutes: 60
     runs-on: ubuntu-latest
@@ -28,11 +28,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-      - run: yarn install
+      - run: npm ci
       - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
+        run: npm run playwright install --with-deps
       - name: Run Playwright tests
-        run: yarn playwright test
+        run: npm run playwright test
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
@@ -49,7 +49,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-      - run: yarn install
+      - run: npm ci
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ env.AWS_ROLE_ARN }}
@@ -58,4 +58,4 @@ jobs:
       - uses: fujiwara/lambroll@v1
         with:
           version: v1.1.3
-      - run: yarn deploy
+      - run: npm run deploy
