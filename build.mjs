@@ -2,7 +2,7 @@ import { build } from "esbuild";
 import { cpSync } from "fs";
 
 await build({
-  entryPoints: ["src/index.tsx"],
+  entryPoints: ["src/lambda.tsx"],
   bundle: true,
   platform: "node",
   target: "node22",
