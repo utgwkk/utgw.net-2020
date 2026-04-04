@@ -5,4 +5,4 @@
 - `npm run format` コマンドを実行し、コードを整形します
 - `npm run lint` コマンドを実行し、lintエラーが出ないことを確かめます
 - `npm run build` コマンドを実行し、正常にビルドできることを確かめます
-- `npm run playwright test` コマンドを実行し、E2Eテストが通ることを確かめます
+- `npx playwright test` コマンドを実行し、E2Eテストが通ることを確かめます
