@@ -6,8 +6,7 @@
   src:
     local("Ubuntu Light"),
     local("Ubuntu-Light"),
-    url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjsGyI.ttf)
-      format("truetype");
+    url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjsGyI.ttf) format("truetype");
   font-display: swap;
 }
 

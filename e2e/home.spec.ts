@@ -9,10 +9,7 @@ test("title", async ({ page }) => {
 test("OGP", async ({ page }) => {
   await page.goto("http://localhost:3000");
 
-  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
-    "content",
-    "utgw.net",
-  );
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute("content", "utgw.net");
   await expect(page.locator('meta[property="og:description"]')).toHaveAttribute(
     "content",
     "utgw.net",
@@ -22,13 +19,11 @@ test("OGP", async ({ page }) => {
 test("Twitter", async ({ page }) => {
   await page.goto("http://localhost:3000");
 
-  await expect(page.locator('meta[name="twitter:title"]')).toHaveAttribute(
+  await expect(page.locator('meta[name="twitter:title"]')).toHaveAttribute("content", "utgw.net");
+  await expect(page.locator('meta[name="twitter:description"]')).toHaveAttribute(
     "content",
     "utgw.net",
   );
-  await expect(
-    page.locator('meta[name="twitter:description"]'),
-  ).toHaveAttribute("content", "utgw.net");
 });
 
 test("format-detection", async ({ page }) => {
