@@ -1,6 +1,4 @@
-import React from "react";
-
-export const LargeIcon: React.FC = () => (
+export const LargeIcon = () => (
   <div className="icon-container">
     <img
       src="/img/nikutai.png"

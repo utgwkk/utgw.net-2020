@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Account {
   title: string;
   id: string;
@@ -63,7 +61,7 @@ const accountList: Account[] = [
   { title: "Trickcal (Global)", id: "3H5H650H" },
 ];
 
-const AccountListItem: React.FC<Account> = ({ title, id, url, rel }) => {
+const AccountListItem = ({ title, id, url, rel }: Account) => {
   const linkText = `${title} (${id})`;
   return (
     <li>
@@ -78,7 +76,7 @@ const AccountListItem: React.FC<Account> = ({ title, id, url, rel }) => {
   );
 };
 
-export const AccountList: React.FC = () => {
+export const AccountList = () => {
   return (
     <ul>
       {accountList.map((account, i) => (
