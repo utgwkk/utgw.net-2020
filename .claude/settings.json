@@ -8,5 +8,19 @@
       "Bash(npm run typecheck:*)",
       "Bash(npx playwright:*)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; [ -n \"$f\" ] && npm run format -- \"$f\"; } 2>/dev/null || true",
+            "statusMessage": "フォーマット中..."
+          }
+        ]
+      }
+    ]
   }
 }
