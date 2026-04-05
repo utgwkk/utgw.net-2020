@@ -12,7 +12,7 @@ export const Layout = ({ children }: { children: any }) => (
       <meta name="twitter:title" content="utgw.net" />
       <meta name="twitter:description" content="utgw.net" />
       <meta name="format-detection" content="telephone=no" />
-      <link rel="stylesheet" href="/styles/main.css" />
+      <link rel="stylesheet" href="/styles/main.css?v=20260406" />
     </head>
     <body>{children}</body>
   </html>
