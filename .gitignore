@@ -45,3 +45,5 @@ node_modules/
 
 .claude/worktrees
 .claude/settings.local.json
+
+public/styles/main.css

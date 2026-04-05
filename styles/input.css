@@ -1,0 +1,60 @@
+/* Preflight を除外して theme と utilities のみインポート */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* Ubuntu Light フォント（Google Fonts セルフホスト） */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Ubuntu Light"),
+    local("Ubuntu-Light"),
+    url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjsGyI.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* グローバル要素スタイル（className が使えない要素）*/
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ccc;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+  font-weight: normal;
+}
+
+a {
+  color: #33f;
+}
+
+a:hover {
+  color: #00f;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin-left: 0;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #ff3;
+  }
+  body {
+    color: #fff;
+    background-color: #888;
+  }
+  a:hover {
+    color: #ff0;
+  }
+}
