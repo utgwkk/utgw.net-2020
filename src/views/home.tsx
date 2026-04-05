@@ -15,7 +15,7 @@ export const Home = ({ presentations }: HomeProps) => {
       <Contacts />
       <div
         id="aboutme"
-        className="w-4/5 bg-[#fefefe] border-[3px] border-solid border-[#333] rounded-[10px] mx-auto mt-[3em] p-[1em] dark:bg-[#010101] dark:text-white dark:border-[#ccc]"
+        className="mx-auto mt-[3em] w-4/5 rounded-[10px] border-[3px] border-solid border-[#333] bg-[#fefefe] p-[1em] dark:border-[#ccc] dark:bg-[#010101] dark:text-white"
       >
         <h2>Profile</h2>
         <p>utgwkk (@utgwkk, a.k.a. @utgw, UTAGAWA Kiki) ...</p>
@@ -28,17 +28,17 @@ export const Home = ({ presentations }: HomeProps) => {
         <h2>My Accounts</h2>
         <AccountList />
         <h2>Presentations</h2>
-        <ul className="[margin-block-start:0] [margin-block-end:0] [margin-inline-start:0] [padding-inline-start:0]">
+        <ul className="[margin-inline-start:0] [margin-block-start:0] [margin-block-end:0] [padding-inline-start:0]">
           {presentations.slice(0, 5).map((presentation) => (
             <li
               key={presentation.id}
-              className="flex justify-between mb-[10px] gap-[5px] max-[480px]:block"
+              className="mb-[10px] flex justify-between gap-[5px] max-[480px]:block"
             >
               <div className="max-[480px]:mb-[10px]">
                 <a href={presentation.url}>{presentation.title}</a>
               </div>
               <iframe
-                className="speakerdeck-iframe aspect-[710/399] border-0 p-0 m-0 bg-transparent max-h-[200px]"
+                className="speakerdeck-iframe m-0 aspect-[710/399] max-h-[200px] border-0 bg-transparent p-0"
                 src={presentation.iframeUrl}
                 loading="lazy"
                 frameBorder={0}
@@ -59,7 +59,7 @@ export const Home = ({ presentations }: HomeProps) => {
             <address> utgw (at) kmc.gr.jp</address>
           </li>
         </ul>
-        <hr className="border-[#333] my-[20px] mx-auto" />
+        <hr className="mx-auto my-[20px] border-[#333]" />
         <div>&copy; 2016-2026 UTAGAWA Kiki</div>
         <div>
           <a href="https://sites.google.com/view/happy-busy/">

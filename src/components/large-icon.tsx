@@ -1,8 +1,8 @@
 export const LargeIcon = () => (
-  <div className="block text-center mx-auto mb-[2em]">
+  <div className="mx-auto mb-[2em] block text-center">
     <img
       src="/img/nikutai.png"
-      className="border-[5px] border-solid border-[#333] rounded-[250px] bg-white dark:bg-[#090909] max-[480px]:w-60 max-[480px]:h-60 max-[480px]:rounded-[120px]"
+      className="rounded-[250px] border-[5px] border-solid border-[#333] bg-white max-[480px]:h-60 max-[480px]:w-60 max-[480px]:rounded-[120px] dark:bg-[#090909]"
       width={500}
       height={500}
       alt="icon"
