@@ -46,3 +46,8 @@ test("「時間のないサイト運営者リング」のバナーがある", as
   const resp = await page.goto(imgUrl.toString());
   expect(resp.ok(), "バナー画像がリンク切れしていない").toBe(true);
 });
+
+test("Screenshot", async ({ page }) => {
+  await page.goto("http://localhost:3000");
+  await expect(page).toHaveScreenshot({ fullPage: true });
+});
