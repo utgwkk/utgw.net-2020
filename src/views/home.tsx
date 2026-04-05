@@ -1,7 +1,6 @@
 import { AccountList } from "../components/account-list";
 import { Contacts } from "../components/contacts";
 import { LargeIcon } from "../components/large-icon";
-import { Now } from "../components/now";
 import { Presentation } from "../lib/speakerdeck";
 
 interface HomeProps {
@@ -67,9 +66,6 @@ export const Home = ({ presentations }: HomeProps) => {
             />
           </a>
         </div>
-      </div>
-      <div id="now">
-        <Now />
       </div>
     </>
   );
