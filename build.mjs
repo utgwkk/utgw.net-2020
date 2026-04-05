@@ -1,5 +1,6 @@
 import { build } from "esbuild";
-import { cpSync } from "fs";
+import { cpSync, mkdirSync } from "fs";
+import { execSync } from "child_process";
 
 await build({
   entryPoints: ["src/lambda.tsx"],
@@ -14,4 +15,7 @@ await build({
 });
 
 cpSync("public", "dist/public", { recursive: true });
-cpSync("styles", "dist/styles", { recursive: true });
+
+// Tailwind CSS コンパイル
+mkdirSync("dist/styles", { recursive: true });
+execSync("npx @tailwindcss/cli -i styles/input.css -o dist/styles/main.css", { stdio: "inherit" });
