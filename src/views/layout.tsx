@@ -1,3 +1,5 @@
+declare const __GIT_HASH__: string | undefined;
+
 export const Layout = ({ children }: { children: any }) => (
   <html lang="en">
     <head>
@@ -12,7 +14,10 @@ export const Layout = ({ children }: { children: any }) => (
       <meta name="twitter:title" content="utgw.net" />
       <meta name="twitter:description" content="utgw.net" />
       <meta name="format-detection" content="telephone=no" />
-      <link rel="stylesheet" href="/styles/main.css?v=20260406" />
+      <link
+        rel="stylesheet"
+        href={`/styles/main.css?v=${typeof __GIT_HASH__ !== "undefined" ? __GIT_HASH__ : "dev"}`}
+      />
     </head>
     <body>{children}</body>
   </html>
