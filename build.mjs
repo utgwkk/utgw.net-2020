@@ -1,8 +1,12 @@
 import { build } from "esbuild";
 import { cpSync, mkdirSync } from "fs";
-import { execSync } from "child_process";
+import { promisify } from "node:util";
+import { exec as execCallback, execSync } from "node:child_process";
 
-const gitHash = execSync("git rev-parse HEAD").toString().trim();
+const exec = promisify(execCallback);
+
+const { stdout } = await exec("git rev-parse HEAD");
+const gitHash = stdout.trim();
 
 await build({
   entryPoints: ["src/lambda.tsx"],
