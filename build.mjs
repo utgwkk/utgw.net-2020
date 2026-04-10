@@ -2,7 +2,7 @@ import { build } from "esbuild";
 import { cpSync, mkdirSync } from "fs";
 import { execSync } from "child_process";
 
-const gitHash = execSync("git rev-parse --short HEAD").toString().trim();
+const gitHash = execSync("git rev-parse HEAD").toString().trim();
 
 await build({
   entryPoints: ["src/lambda.tsx"],
