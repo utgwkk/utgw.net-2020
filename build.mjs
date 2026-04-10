@@ -2,6 +2,8 @@ import { build } from "esbuild";
 import { cpSync, mkdirSync } from "fs";
 import { execSync } from "child_process";
 
+const gitHash = execSync("git rev-parse --short HEAD").toString().trim();
+
 await build({
   entryPoints: ["src/lambda.tsx"],
   bundle: true,
@@ -11,6 +13,9 @@ await build({
   outfile: "dist/index.mjs",
   banner: {
     js: "import { createRequire } from 'module'; const require = createRequire(import.meta.url);",
+  },
+  define: {
+    __GIT_HASH__: JSON.stringify(gitHash),
   },
 });
 
