@@ -55,7 +55,7 @@ jobs:
           role-to-assume: ${{ env.AWS_ROLE_ARN }}
           role-session-name: utgw-net-deploy-gha-role-session-${{ github.run_id }}
           aws-region: ap-northeast-1
-      - uses: fujiwara/lambroll@v1
+      - uses: fujiwara/lambroll@v1.4.2
         with:
           version: v1.4.2
       - run: npm run deploy
