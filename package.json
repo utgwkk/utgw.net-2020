@@ -32,6 +32,6 @@
     "oxlint": "^1.59.0",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.19.3",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }
