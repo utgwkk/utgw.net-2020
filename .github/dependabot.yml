@@ -9,6 +9,15 @@ updates:
       - "dependencies"
     cooldown:
       default-days: 7
+    groups:
+      oxlint:
+        patterns:
+          - "oxlint"
+          - "oxfmt"
+      tailwindcss:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
