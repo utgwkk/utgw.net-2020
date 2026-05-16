@@ -6,6 +6,9 @@ on:
       - master
 env:
   AWS_ROLE_ARN: arn:aws:iam::747582436141:role/utgw-net-deploy
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 permissions:
   id-token: write
   contents: read
