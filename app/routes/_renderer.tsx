@@ -1,6 +1,8 @@
+import { jsxRenderer } from "hono/jsx-renderer";
+
 declare const __GIT_HASH__: string | undefined;
 
-export const Layout = ({ children }: { children: any }) => (
+export default jsxRenderer(({ children }) => (
   <html lang="en">
     <head>
       <meta charSet="utf-8" />
@@ -21,4 +23,4 @@ export const Layout = ({ children }: { children: any }) => (
     </head>
     <body>{children}</body>
   </html>
-);
+));

@@ -9,7 +9,7 @@ const { stdout } = await exec("git rev-parse HEAD");
 const gitHash = stdout.trim();
 
 await build({
-  entryPoints: ["src/lambda.tsx"],
+  entryPoints: ["lambda-entry.ts"],
   bundle: true,
   platform: "node",
   target: "node22",

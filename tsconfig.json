@@ -16,6 +16,14 @@
     "jsxImportSource": "hono/jsx",
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "e2e/**/*.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "e2e/**/*.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "lambda-entry.ts",
+    "vite.config.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
