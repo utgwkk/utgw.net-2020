@@ -16,7 +16,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
       - uses: actions/setup-node@v6.4.0
         with:
           node-version-file: .node-version
@@ -27,7 +27,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
       - uses: actions/setup-node@v6.4.0
         with:
           node-version-file: .node-version
@@ -48,7 +48,7 @@ jobs:
     if: ${{ github.ref == 'refs/heads/master' }}
     environment: production
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
       - uses: actions/setup-node@v6.4.0
         with:
           node-version-file: .node-version
