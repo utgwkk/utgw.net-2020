@@ -22,7 +22,7 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.61.0",
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/cli": "^4.3.1",
     "@types/node": "^26.0.0",
     "esbuild": "^0.28.1",
