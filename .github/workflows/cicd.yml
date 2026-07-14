@@ -53,7 +53,7 @@ jobs:
         with:
           node-version-file: .node-version
       - run: npm ci
-      - uses: aws-actions/configure-aws-credentials@v6.2.1
+      - uses: aws-actions/configure-aws-credentials@6.2.2
         with:
           role-to-assume: ${{ env.AWS_ROLE_ARN }}
           role-session-name: utgw-net-deploy-gha-role-session-${{ github.run_id }}
