@@ -15,7 +15,7 @@
     "deploy:statics": "./script/deploy-statics.sh"
   },
   "dependencies": {
-    "@hono/node-server": "^2.0.8",
+    "@hono/node-server": "^2.0.10",
     "hono": "^4.12.30",
     "node-html-parser": "^9.0.0",
     "pino": "^10.3.1",
