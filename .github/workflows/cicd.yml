@@ -60,5 +60,5 @@ jobs:
           aws-region: ap-northeast-1
       - uses: fujiwara/lambroll@v1.5.1
         with:
-          version: v1.4.2
+          version: v1.5.1
       - run: npm run deploy
