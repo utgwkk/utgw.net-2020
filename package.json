@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^2.1.1",
-    "hono": "^4.13.1",
+    "hono": "^4.13.2",
     "node-html-parser": "^9.0.1",
     "pino": "^10.3.1",
     "rss-parser": "^3.13.0"
